@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('title', models.CharField(max_length=50, verbose_name='Title')),
-                ('transaction_type', models.CharField(choices=[('i', 'Дохід'), ('e', 'Витрати')], max_length=1, verbose_name='Transaction type')),
+                ('transaction_type', models.CharField(choices=[('i', 'Income'), ('e', 'Excome')], max_length=1, verbose_name='Transaction type')),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
         ),
